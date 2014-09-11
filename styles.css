@@ -1,0 +1,123 @@
+html {
+	background: url('greg-cohen-3962.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+a {
+
+}
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	text-decoration: none;
+	color: yellow;
+}
+
+.main {
+	color: white;
+	background-color: rgba(124, 124, 124, 0.9);
+	width: 400px;
+	padding: 10px;
+	margin-left: 10%;
+	-moz-box-shadow:    inset 0 0 3em #000000;
+  	-webkit-box-shadow: inset 0 0 3em #000000;
+  	box-shadow:         inset 0 0 3em #000000;
+
+}
+.mainImg {
+	display: none;
+}
+.profile: {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.lighter{
+	font-weight: 300;
+}
+.contact {
+	width: 100%;
+	margin-top: 2em;
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.button {
+
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	padding-right: 10px;
+}
+
+.pop:hover {
+	font-size: 3em;
+	color: yellow;
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+.demographic {
+	margin: 10px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.transparent {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 640px)
+{
+	html {
+		background: #222222;
+	}
+	.main{
+		margin: 0 auto;		
+		width: 90%;
+		min-width: none;
+		background-color: #222222;
+		
+	}
+	.mainImg {
+		display: inline-block;
+		text-align: center;
+	}
+	.mainImg img {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+	.main {
+		margin: 0 auto;
+		width: 60%;
+	}
+
+
+}
