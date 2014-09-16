@@ -42,15 +42,24 @@ a:hover{
 
 .main {
 	color: white;
-	background-color: black;
-	width: 400px;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 500px;
 	height: 90%;
 	padding: 10px;
 	margin-top: 2.5%;
-	margin-left: 10%;
+	margin-left: 5%;
 	
   
 
+}
+
+.main h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	font-family: Garamond;
+}
+.main h2 {
+	font-weight: normal;
 }
 .mainImg {
 	display: none;
@@ -95,7 +104,7 @@ a:hover{
 }
 
 .pop:hover {
-	/*font-size: 3em;*/
+
 	color: yellow;
 	
 }
