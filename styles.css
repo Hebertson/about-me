@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	
 	margin: 0;
 }
 
@@ -41,6 +41,7 @@ a:hover{
 }
 
 .main {
+	font-family: 'Lato', sans-serif;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
 	width: 500px;
