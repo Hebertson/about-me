@@ -9,20 +9,16 @@
 <body>
 	
 	<div ng-app="blog" ng-controller="createBlogCtrl" class="container app">
-		<div class="row">
-			<div class="col-xs-12">
-			<button ng-click="disabled = !disabled" unselectable>Create New Post</button>
-	  		
-		  		<form ng-show ='disabled'>
-		  			<h3>Title: </h3>
-		  			<input type="text" ng-model="blogtitle" placeholder="Title of Blog">
-		  			<div text-angular="text-angular" name="htmlcontent" ng-model="blogcontent"></div>
-		  			<button type="button" ng-click="blogcontent = ''">Reset</button>
-		  			<button type="button" ng-click="submitBlog()" ng-show = '!showUpdate'>Submit</button>
-		  			<button type="button" ng-click="updateBlog()" ng-show = 'showUpdate'>Update</button>
-				</form>
-			</div>
-		</div>
+		<button ng-click="disabled = !disabled" unselectable>Create New Post</button>
+  		
+  		<form ng-show ='disabled'>
+  			<h3>Title: </h3>
+  			<input type="text" ng-model="blogtitle" placeholder="Title of Blog">
+  			<div text-angular="text-angular" name="htmlcontent" ng-model="blogcontent"></div>
+  			<button type="button" ng-click="blogcontent = ''">Reset</button>
+  			<button type="button" ng-click="submitBlog()" ng-show = '!showUpdate'>Submit</button>
+  			<button type="button" ng-click="updateBlog()" ng-show = 'showUpdate'>Update</button>
+		</form>
 
 		<div ng-repeat="blog in blogs">
 			<h1> {{blog.title}}</h1>
